@@ -1,0 +1,39 @@
+创建list  有序的
+L = ['aaa', 'bbb', 'ccc']
+append()添加一个元素
+insert()指定位置添加元素
+pop()无参数时删除最后一个元素，有参数删除指定位置的元素
+
+创建tuple
+t = ('aaa', 'bbb', 'ccc') 用()代替[]
+不可修改元素，可以访问。
+t = ('aaa',)创建一个元素的tuple需要加“，”才表示是tuple
+
+缩进请严格按照Python的习惯写法：4个空格，不要使用Tab，更不要混合Tab和空格，
+否则很容易造成因为缩进引起的语法错误。
+并且退出缩进需要多敲一行回车
+
+dict:表示如下 key-value存储  key不能重复  无序的
+d = {
+    'aaa': 95,
+    'bbb': 85,
+    'ccc': 59
+}
+添加
+d.setdefault('ddd', 65)
+删除
+d.pop('aaa', 95)
+d['aaa']  d.get('aaa')获得对应aaa的值
+查找速度快，效率高，
+占内存
+for key in d  遍历d的key
+
+set不能重复  无序的
+s = set(['A', 'B', 'C'，'B'])  set(['A', 'C'，'B'])
+'A' in s 判断元素是否在set中
+for name in s:遍历元素
+s.add()添加元素
+s.remove()移除元素
+
+
+
