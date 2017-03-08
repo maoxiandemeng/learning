@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 
 # t = ('aaa', 'bbb', 'ccc')
-t = ('aaa', 'bbb', 'ccc', ['AAA', 'BBB'])
-l = t[3]
+# t = ('aaa', 'bbb', 'ccc', ['AAA', 'BBB'])
+# l = t[3]
 # print t
 
-age = 20
+# age = 20
 # if age >= 18:
 #     print 'age大于18'
 # else:
@@ -63,11 +63,11 @@ age = 20
 #             print str(x) + '<' + str(y)
 
 
-d = {
-    'aaa': 95,
-    'bbb': 85,
-    'ccc': 59
-}
+# d = {
+#     'aaa': 95,
+#     'bbb': 85,
+#     'ccc': 59
+# }
 # 添加
 # d.setdefault('ddd', 65)
 # 删除
@@ -76,10 +76,17 @@ d = {
 # print d
 # print len(d)
 
-s = set(['A', 'B', 'C', 'D'])
-l = ['A', 'C', 'E', 'F']
-for name in l:
-    if name in s:
-        continue
-    s.add(name)
-print s
+# s = set(['A', 'B', 'C', 'D'])
+# l = ['A', 'C', 'E', 'F']
+# for name in l:
+#     if name in s:
+#         continue
+#     s.add(name)
+# print s
+
+
+
+
+
+
+
