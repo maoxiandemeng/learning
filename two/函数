@@ -1,0 +1,37 @@
+高阶函数
+在函数式编程中，我们可以将函数当作变量一样自由使用。
+一个函数接收另一个函数作为参数，这种函数称之为高阶函数
+
+map/reduce/filter 是 Python 中较为常用的内建高阶函数，它们为函数式编程提供了不少便利。
+map 函数的使用形式如下：
+map(function, sequence)
+解释：对 sequence 中的 item 依次执行 function(item)，并将结果组成一个 List 返回，也就是：
+[function(item1), function(item2), function(item3), ...]
+
+reduce 函数的使用形式如下：
+
+reduce(function, sequence[, initial])
+解释：先将 sequence 的前两个 item 传给 function，即 function(item1, item2)，
+函数的返回值和 sequence 的下一个 item 再传给 function，
+即 function(function(item1, item2), item3)，如此迭代，直到 sequence 没有元素，
+如果有 initial，则作为初始值调用。
+
+filter 函数用于过滤元素，它的使用形式如下：
+
+filter(function, sequnce)
+解释：将 function 依次作用于 sequnce 的每个 item，即 function(item)，将返回值为 True 的 item
+组成一个 List/String/Tuple (取决于 sequnce 的类型，python3 统一返回迭代器)返回。
+注意在 python2 和 python3 中，map/reduce/filter 的返回值类型有所不同，python2 返回的是基本数据类型，而 python3 则返回了迭代器；
+
+
+匿名函数
+lambda 参数: 表达式
+关键字 lambda 说明它是一个匿名函数，冒号 : 前面的变量是该匿名函数的参数，冒号后面是函数的返回值，
+注意这里不需使用 return 关键字。
+lambda 函数一般适用于创建一些临时性的，小巧的函数
+
+
+
+
+
+
